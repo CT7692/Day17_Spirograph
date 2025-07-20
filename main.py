@@ -1,13 +1,13 @@
 from turtle import Turtle, Screen, colormode
-from random import randint
+import secrets
 
 colormode(255)
 
 
 def random_color(tim_turtle):
-    r = randint(0, 255)
-    g = randint(0, 255)
-    b = randint(0, 255)
+    r = secrets.SystemRandom().randint(0, 255)
+    g = secrets.SystemRandom().randint(0, 255)
+    b = secrets.SystemRandom().randint(0, 255)
     return tim_turtle.color(r, g, b)
 
 
